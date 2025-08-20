@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -78,7 +79,7 @@ p {
 }
 
 
-/* Animação do card */
+/* Animação do card tipos guitarras */
 .cards-container {
   display: flex;
   justify-content: space-evenly;
@@ -89,7 +90,7 @@ p {
 }
 .cards-tipos {
   width: 300px;
-  height: 400px;
+  height: 450px;
   perspective: 1000px;
 }
 .card-flip {
@@ -305,7 +306,7 @@ opacity: 1;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 250px;
-  height: 200px;
+  height: 300px;
   padding: 2.5rem 2rem;
   text-align: center;
   transition:  all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
