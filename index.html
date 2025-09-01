@@ -1,294 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuideGuita</title>
+    <title>GuideGuitar</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="principal">
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-decoration">
+            <span class="floating-note note-1">🎵</span>
+            <span class="floating-note note-2">🎸</span>
+            <span class="floating-note note-3">🎶</span>
+        </div>
+        <div class="hero-content container">
+            <div class="hero-icon">🎸</div>
+            <h1 class="hero-title">Tudo que você precisa saber sobre Guitarras</h1>
+            <h2 class="hero-subtitle">Histórias, tipos, peças e dicas para escolher a sua!</h2>
+            <p class="hero-description">Aprenda a escolher e cuidar da sua guitarra da melhor forma.</p>
+        </div>
+    </section>
 
-        <section class="hero">
-            <!-- SUPUNHETAMOS: Imagem de uma guitarra iconica ou um carrosel de guitarras legais passando no fundo da tela -->
-            <h1>Tudo que você precisa saber sobre Guitarras</h1>
-            <h4>Histórias, tipos, peças e dicas para escolher a sua!</h4>
-            <p>Aprenda a escolher e cuidar da sua guitarra da melhor forma.
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">História da Guitarra</h2>
+            <p class="section-description">Descubra como a guitarra evoluiu ao longo dos anos e se tornou o instrumento mais popular do mundo
             </p>
-        </section>
-
-        <!-- Seção Historia da guitarra em formato de linha do tempo CONCLUIDA -->
-        <section class="historia-da-guitarra">
-            <h2>História da Guitarra</h2>
-            <p>Descubra como a guitarra evoluiu ao longo dos anos e se tornou o instrumento mais popular do mundo</p>
-
-            <br><br><br><br><br><br>
-
-            <div class="timeline">
-                <div class="step">
-                    <input type="checkbox" id="step1">
-                    <label for="step1" data-step="3500 AC"></label>
-                    <div class="card">
-                        <h3>Primeiros instrumentos de Corda</h3>
-                        <p>Instrumentos de cordas rudimentares surgem no Oriente Médio.</p>
+            <div class="timeline-wrapper">
+                <div class="timeline-container">
+                    <div class="timeline-step">
+                        <input type="checkbox" id="step1" class="timeline-checkbox">
+                        <label for="step1" class="timeline-label" data-step="3500 AC">
+                            <span class="step-indicator"></span>
+                        </label>
+                        <div class="timeline-card">
+                            <h3>Primeiros instrumentos de Corda</h3>
+                            <p>Instrumentos de cordas rudimentares surgem no Oriente Médio.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step2">
-                    <label for="step2" data-step="b"></label>
-                    <div class="card">Texto do evento B</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step3">
-                    <label for="step3" data-step="c"></label>
-                    <div class="card">Texto do evento C</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step4">
-                    <label for="step4" data-step="d"></label>
-                    <div class="card">Texto do evento D</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step5">
-                    <label for="step5" data-step="e"></label>
-                    <div class="card">Texto do evento E</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step6">
-                    <label for="step6" data-step="f"></label>
-                    <div class="card">Texto do evento F</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step7">
-                    <label for="step7" data-step="g"></label>
-                    <div class="card">Texto do evento G</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step8">
-                    <label for="step8" data-step="h"></label>
-                    <div class="card">Texto do evento H</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step9">
-                    <label for="step9" data-step="i"></label>
-                    <div class="card">Texto do evento I</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step10">
-                    <label for="step10" data-step="j"></label>
-                    <div class="card">Texto do evento J</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step11">
-                    <label for="step11" data-step="k"></label>
-                    <div class="card">Texto do evento K</div>
-                </div>
-                <div class="step">
-                    <input type="checkbox" id="step12">
-                    <label for="step12" data-step="l"></label>
-                    <div class="card">Texto do evento L</div>
+                    <div class="timeline-step">
+                        <input type="checkbox" id="step2" class="timeline-checkbox">
+                        <label for="step2" class="timeline-label" data-step="b">
+                            <span class="step-indicator"></span>
+                        </label>
+                        <div class="timeline-card">
+                            Texto do evento B
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <input type="checkbox" id="step3" class="timeline-checkbox">
+                        <label for="step3" class="timeline-label" data-step="c">
+                            <span class="step-indicator"></span>
+                        </label>
+                        <div class="timeline-card">
+                            Texto do evento C
+                        </div>
+                    </div>
+                    <div class="timeline-line"></div>
                 </div>
             </div>
-            <br><br><br><br><br><br>
-        </section>
+        </div>
+    </section>
 
-        <!-- seção de cardes tipos de guitarra CONCLUIDA -->
-        <section class="tipos-de-guitarra">
-            <h2>Tipos de Guitarra</h2>
-            <p>Conheça os principais tipos de guitarras e suas características únicas</p>
-            <div class="cards-container">
-                <div class="cards-tipos">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <img src="images/acustica.png">
-                            <h3>Acústica</h3>
-                            <p>Passe o mouse para ver mais informações</p>
+    <!-- TIPOS DE GUITARRA -->
+    <section class="guitar-types-section">
+        <div class="container">
+            <h2 class="section-title">Tipos de Guitarra</h2>
+            <p class="section-description">Conheça os principais tipos de guitarras e suas características únicas</p>
+            <div class="guitar-cards-grid">
+                <div class="guitar-card-container" tabindex="0">
+                    <div class="guitar-card">
+                        <div class="guitar-card-front">
+                            <div class="card-image">
+                                <img src="images/acustica.png" alt="Acústica">
+                                <span class="card-icon">🎸</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>Acústica</h3>
+                                <p>Passe o mouse para ver mais informações</p>
+                            </div>
                         </div>
-                        <div class="card-back">
+                        <div class="guitar-card-back">
                             <h4>Guitarra Acústica</h4>
-                            <br><br>
-                            <dl>
-                                <dt>✔️ Som natural e orgânico</dt>
-                                <dt>✔️ Não precisa de amplificação</dt>
-                                <dt>✔️ Ideal para iniciantes</dt>
-                                <dt>✔️ Versátil para vários estilos</dt>
-                                <dt>✔️ Portabidtdade máxima</dt>
-                            </dl>
+                            <div class="features-list">
+                                <div class="feature-item"><span class="check-icon">✔️</span> Som natural e orgânico</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Não precisa de amplificação</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Ideal para iniciantes</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Versátil para vários estilos</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Portabilidade máxima</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cards-tipos">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <img src="images/semi-acustica.png">
-                            <h3>Semi-Acústica</h3>
-                            <p>Passe o mouse para ver mais informações</p>
+                <!-- Repita para os outros tipos -->
+                <div class="guitar-card-container" tabindex="0">
+                    <div class="guitar-card">
+                        <div class="guitar-card-front">
+                            <div class="card-image">
+                                <img src="images/semi-acustica.png" alt="Semi-Acústica">
+                                <span class="card-icon">🎸</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>Semi-Acústica</h3>
+                                <p>Passe o mouse para ver mais informações</p>
+                            </div>
                         </div>
-                        <div class="card-back">
+                        <div class="guitar-card-back">
                             <h4>Guitarra Semi-Acústica</h4>
-                            <br><br>
-                            <dl>
-                                <dt>✔️ Som híbrido único</dt>
-                                <dt>✔️ Captadores elétricos</dt>
-                                <dt>✔️ Ressonância natural</dt>
-                                <dt>✔️ Ideal para jazz e blues</dt>
-                                <dt>✔️ Versatilidade sonora</dt>
-                            </dl>
+                            <div class="features-list">
+                                <div class="feature-item"><span class="check-icon">✔️</span> Som híbrido único</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Captadores elétricos</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Ressonância natural</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Ideal para jazz e blues</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Versatilidade sonora</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cards-tipos">
-                    <div class="card-flip">
-                        <div class="card-front">
-                            <img src="images/eletrica.webp">
-                            <h3>Elétrica</h3>
-                            <p>Passe o mouse para ver mais informações</p>
+                <div class="guitar-card-container" tabindex="0">
+                    <div class="guitar-card">
+                        <div class="guitar-card-front">
+                            <div class="card-image">
+                                <img src="images/eletrica.webp" alt="Elétrica">
+                                <span class="card-icon">🎸</span>
+                            </div>
+                            <div class="card-content">
+                                <h3>Elétrica</h3>
+                                <p>Passe o mouse para ver mais informações</p>
+                            </div>
                         </div>
-                        <div class="card-back">
+                        <div class="guitar-card-back">
                             <h4>Guitarra Elétrica</h4>
-                            <br><br>
-                            <dl>
-                                <dt>✔️ Som amplificado potente</dt>
-                                <dt>✔️ Efeitos e distorções</dt>
-                                <dt>✔️ Rock, metal e blues</dt>
-                                <dt>✔️ Versatilidade de timbres</dt>
-                                <dt>✔️ Expressão máxima</dt>
-                            </dl>
+                            <div class="features-list">
+                                <div class="feature-item"><span class="check-icon">✔️</span> Som amplificado potente</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Efeitos e distorções</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Rock, metal e blues</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Versatilidade de timbres</div>
+                                <div class="feature-item"><span class="check-icon">✔️</span> Expressão máxima</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Seção de Cuidaddos e manuntençãop CONCLUIDA -->
-        <section class="cuidados-necessarios">
-            <h2>Cuidados e manuntenção</h2>
-            <p>Dicas essenciais para manter sua guitarra em perfeito estado</p>
-
-            <br><br>
-            <div class="card-manuntencao">
-
-                <div class="card-cuidados">
-                    <img src="images/esponja.png" alt="">
-                    <h3>Limpeza Regular</h3>
-                    <p>Mantenha sua guitarra limpa para preservar o som e a aparência.</p>
-                    <div class="video-link">
+    <!-- CUIDADOS E MANUTENÇÃO -->
+    <section class="care-section">
+        <div class="container">
+            <h2 class="section-title">Cuidados e Manutenção</h2>
+            <p class="section-description">Dicas essenciais para manter sua guitarra em perfeito estado</p>
+            <div class="care-cards-grid">
+                <div class="care-card" tabindex="0">
+                    <div class="care-card-content">
+                        <div class="care-icon">🧼</div>
+                        <h3>Limpeza Regular</h3>
+                        <p>Mantenha sua guitarra limpa para preservar o som e a aparência.</p>
+                    </div>
+                    <div class="video-link-popup">
                         <a href="https://www.youtube.com/watch?v=bGF1UP936TI&list=RDbGF1UP936TI&start_radio=1"
                             target="_blank">Clique aqui e assista uma vídeo-aula</a>
                     </div>
                 </div>
-
-                <div class="card-cuidados">
-                    <img src="images/nota-musical.png" alt="">
-                    <h3>Troca de cordas</h3>
-                    <p>Troque as cordas regularmente para manter a qualidade sonora do instrumento.</p>
-                    <div class="video-link">
+                <div class="care-card" tabindex="0">
+                    <div class="care-card-content">
+                        <div class="care-icon">🎵</div>
+                        <h3>Troca de cordas</h3>
+                        <p>Troque as cordas regularmente para manter a qualidade sonora do instrumento.</p>
+                    </div>
+                    <div class="video-link-popup">
                         <a href="https://www.youtube.com/watch?v=bGF1UP936TI&list=RDbGF1UP936TI&start_radio=1"
                             target="_blank">Clique aqui e assista uma vídeo-aula</a>
                     </div>
                 </div>
-
-                <div class="card-cuidados">
-                    <img src="images/ferramenta.png" alt="">
-                    <h3>Manuntenção Profissional</h3>
-                    <p>Leve sua guitarra para revisao com um profissional periodicamente.</p>
-                    <div class="video-link">
+                <div class="care-card" tabindex="0">
+                    <div class="care-card-content">
+                        <div class="care-icon">🛠️</div>
+                        <h3>Manutenção Profissional</h3>
+                        <p>Leve sua guitarra para revisão com um profissional periodicamente.</p>
+                    </div>
+                    <div class="video-link-popup">
                         <a href="https://www.youtube.com/watch?v=bGF1UP936TI&list=RDbGF1UP936TI&start_radio=1"
                             target="_blank">Clique aqui e assista uma vídeo-aula</a>
                     </div>
                 </div>
-
-                <div class="card-cuidados">
-                    <img src="images/casa.png" alt="">
-                    <h3>Armazenamento</h3>
-                    <p>Mantenha em local seco para preservar a aparencia e a vida util do instrumento.</p>
-                    <div class="video-link">
+                <div class="care-card" tabindex="0">
+                    <div class="care-card-content">
+                        <div class="care-icon">🏠</div>
+                        <h3>Armazenamento</h3>
+                        <p>Mantenha em local seco para preservar a aparência e a vida útil do instrumento.</p>
+                    </div>
+                    <div class="video-link-popup">
                         <a href="https://www.youtube.com/watch?v=bGF1UP936TI&list=RDbGF1UP936TI&start_radio=1"
                             target="_blank">Clique aqui e assista uma vídeo-aula</a>
                     </div>
                 </div>
-
-                <div class="extra">
-                    <h4>dicas extras para longevidade</h5>
-                        <div>
-                            <span>Temnperatura</span>
-                            <p>Evite temperaturas extremas para não danificar o instrumento.</p>
-                        </div>
-                        <div>
-                            <span>Umidade</span>
-                            <p>mantenha em local com umidade adequada para evitar danos à madeira.</p>
-                        </div>
-                        <div>
-                            <span>Use com frequência</span>
-                            <p>Tocar regularmente ajuda a manter o instrumento.</p>
-                        </div>
-
-                </div>
-
             </div>
+            <div class="extra-tips">
+                <h3 class="extra-tips-title">Dicas Extras para Longevidade</h3>
+                <div class="extra-tips-grid">
+                    <div class="extra-tip">
+                        <div class="tip-icon">🌡️</div>
+                        <h5>Temperatura</h5>
+                        <p>Evite temperaturas extremas para não danificar o instrumento.</p>
+                    </div>
+                    <div class="extra-tip">
+                        <div class="tip-icon">💧</div>
+                        <h5>Umidade</h5>
+                        <p>Mantenha em local com umidade adequada para evitar danos à madeira.</p>
+                    </div>
+                    <div class="extra-tip">
+                        <div class="tip-icon">🎸</div>
+                        <h5>Use com frequência</h5>
+                        <p>Tocar regularmente ajuda a manter o instrumento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </section>
-
-        <section class="galeria-de-modelos">
-            <h2>Modelos de Guitarras</h2>
-            <p>Confira aqui os modelos de guitarras e suas principais caracteristicas</p>
-
-            <br><br><br>
-            <div class="carrossel">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="../images/eletrica.webp" alt="Imagem 1">
-                        <div class="overlay">
+    <!-- GALERIA DE MODELOS -->
+    <!-- <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Modelos de Guitarras</h2>
+            <p class="section-description">Confira aqui os modelos de guitarras e suas principais características</p>
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        <img src="images/eletrica.webp" alt="Imagem 1">
+                        <div class="carousel-overlay">
                             <h2>Super Stratocaster</h2>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="../images/fender-jazzmaster.png" alt="Imagem 2">
-                        <div class="overlay">
+                    <div class="carousel-slide">
+                        <img src="images/fender-jazzmaster.png" alt="Imagem 2">
+                        <div class="carousel-overlay">
                             <h2>Fender JazzMaster</h2>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="../images/telecaster.png" alt="Imagem 3">
-                        <div class="overlay">
-                            <h2>telecaster</h2>
+                    <div class="carousel-slide">
+                        <img src="images/telecaster.png" alt="Imagem 3">
+                        <div class="carousel-overlay">
+                            <h2>Telecaster</h2>
                         </div>
                     </div>
-                    <div class="slide">
-                        <img src="../images/Gibson_Les_Paul_Standard.webp" alt="Imagem 4">
-                        <div class="overlay">
-                            <h2>Gibson_Les_Paul_Standard</h2>
+                    <div class="carousel-slide">
+                        <img src="images/Gibson_Les_Paul_Standard.webp" alt="Imagem 4">
+                        <div class="carousel-overlay">
+                            <h2>Gibson Les Paul Standard</h2>
                         </div>
                     </div>
                 </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                </div>
             </div>
-            <!-- <div class="indicadores">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> -->
-
-        </section>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-
-    </div>
-    <hr>
-    <!-- Footer da pagina CONCLUIDO -->
-    <footer>
-        <div class="redes-sociais">
-            <a href="#"><img src="images/redes/icons-linkedin.png" alt="Linkedin"></a>
-            <a href="#"><img src="images/redes/icon-facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/redes/icons-instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/redes/icons-github.png" alt="GitHub"></a>
-            <a href="#"><img src="images/redes/icons-internet.png" alt="Portifolio"></a>
         </div>
-        <hr>
-        <br>
-        <p>© 2025 GuideGuita. Desenvolvido por: Marcelly Oliveira.</p>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><img src="images/redes/icons-linkedin.png" alt="Linkedin" class="social-link"></a>
+                <a href="#"><img src="images/redes/icon-facebook.png" alt="Facebook" class="social-link"></a>
+                <a href="#"><img src="images/redes/icons-instagram.png" alt="Instagram" class="social-link"></a>
+                <a href="#"><img src="images/redes/icons-github.png" alt="GitHub" class="social-link"></a>
+                <a href="#"><img src="images/redes/icons-internet.png" alt="Portifolio" class="social-link"></a>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-text">
+                © 2025 GuideGuitar. Desenvolvido por: Marcelly Oliveira.
+            </div>
+        </div>
     </footer>
 </body>
 
