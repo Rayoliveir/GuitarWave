@@ -2,7 +2,7 @@
 Bem-vindo ao **GuitarWave**, uma landing page moderna e responsiva dedicada aos amantes de guitarra. 
 
 ## 📸 Visão Geral
-<img src="images/telaInicial.png"></img>
+<img src="images/telainicial.png"></img>
 
 ## 🚀 Tecnologias Utilizadas
 
