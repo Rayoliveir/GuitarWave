@@ -817,6 +817,9 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 6px 12px rgba(224, 159, 62, 0.3);
+  width: 70px;
+  height: 70px;
+
 }
 
 .social-link:hover {
