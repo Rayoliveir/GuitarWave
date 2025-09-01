@@ -1,20 +1,22 @@
 // Guitar data and utility functions
-export interface GuitarType {
-  name: string;
-  image: string;
-  features: string[];
-  description: string;
-  priceRange?: string;
-  difficulty?: 'Iniciante' | 'Intermediário' | 'Avançado';
-}
+/**
+ * @typedef {Object} GuitarType
+ * @property {string} name
+ * @property {string} image
+ * @property {string[]} features
+ * @property {string} description
+ * @property {string} [priceRange]
+ * @property {'Iniciante' | 'Intermediário' | 'Avançado'} [difficulty]
+ */
 
-export interface CareItem {
-  title: string;
-  description: string;
-  videoUrl: string;
-  frequency: string;
-  difficulty: 'Fácil' | 'Médio' | 'Difícil';
-}
+/**
+ * @typedef {Object} CareItem
+ * @property {string} title
+ * @property {string} description
+ * @property {string} videoUrl
+ * @property {string} frequency
+ * @property {'Fácil' | 'Médio' | 'Difícil'} difficulty
+ */
 
 export const guitarTypes= [
   {

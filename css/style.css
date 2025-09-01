@@ -319,6 +319,7 @@ body {
 }
 
 .timeline-card {
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -335,6 +336,10 @@ body {
   z-index: 2;
   border: 2px solid var(--hunyadi-yellow);
   backdrop-filter: blur(10px);
+}
+
+.timeline-checkbox:checked ~ .timeline-card {
+  display: block;
 }
 
 .timeline-card.active {

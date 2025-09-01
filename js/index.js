@@ -61,3 +61,4 @@ export const enhanceAccessibility = () => {
     card.setAttribute('aria-label', `Tipo de guitarra ${index + 1}`);
   });
 };
+
