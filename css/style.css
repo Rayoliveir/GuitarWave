@@ -513,16 +513,19 @@ body {
   color: var(--hunyadi-yellow);
 }
 
-/* Care Section */
 .care-section {
   padding: 8rem 0;
   background: linear-gradient(135deg, var(--dark-slate-gray-dark) 0%, var(--dark-slate-gray) 100%);
 }
 
 .care-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  /* A linha de baixo esta comentada pq tinha um display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+  gap: 1rem;
   margin-bottom: 6rem;
 }
 
@@ -536,7 +539,8 @@ body {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 2px solid var(--hunyadi-yellow);
   overflow: visible;
-  height: 320px;
+  height: 390px;
+  width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
