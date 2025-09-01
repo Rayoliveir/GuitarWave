@@ -7,36 +7,36 @@ export interface TimelineEvent {
 }
 
 export class TimelineController {
-  private events: TimelineEvent[];
-  private activeIndex: number | null = null;
+  events: TimelineEvent[];
+  activeIndex: number | null = null;
 
-  constructor(events: TimelineEvent[]) {
+  constructor(events) {
     this.events = events;
   }
 
-  getEvents(): TimelineEvent[] {
+  getEvents(){
     return this.events;
   }
 
-  getActiveIndex(): number | null {
+  getActiveIndex(){
     return this.activeIndex;
   }
 
-  setActive(index: number): void {
+  setActive(index){
     this.activeIndex = this.activeIndex === index ? null : index;
   }
 
-  getActiveEvent(): TimelineEvent | null {
+  getActiveEvent(){
     return this.activeIndex !== null ? this.events[this.activeIndex] : null;
   }
 
   // Filter events by category
-  filterByCategory(category: string): TimelineEvent[] {
+  filterByCategory(category){
     return this.events.filter(event => event.category === category);
   }
 
   // Get events in a specific year range
-  getEventsInRange(startYear: number, endYear: number): TimelineEvent[] {
+  getEventsInRange(startYear, endYear){
     return this.events.filter(event => {
       const year = parseInt(event.year.replace(/\D/g, ''));
       return year >= startYear && year <= endYear;
@@ -45,13 +45,12 @@ export class TimelineController {
 }
 
 // Smooth scroll to timeline element
-export const scrollToTimelineEvent = (index: number): void => {
+export const scrollToTimelineEvent = (index) => {
   const element = document.querySelector(`#timeline-step-${index}`);
   if (element) {
     element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'center',
-      inline: 'center'
-    });
+      behavior,
+      block,
+      inline);
   }
 };

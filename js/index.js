@@ -6,7 +6,7 @@ export * from './guitarData';
 export * from './interactions';
 
 // Main initialization function
-export const initializeGuideGuita = (): void => {
+export const initializeGuideGuita = () => {
   // Initialize all interactive features
   import('./interactions').then(({ 
     initializePageInteractions, 
@@ -31,12 +31,12 @@ export const initializeGuideGuita = (): void => {
 };
 
 // Theme utilities
-export const toggleTheme = (): void => {
+export const toggleTheme = () => {
   document.body.classList.toggle('dark-theme');
   localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
 };
 
-export const loadSavedTheme = (): void => {
+export const loadSavedTheme = () => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     document.body.classList.add('dark-theme');
@@ -44,7 +44,7 @@ export const loadSavedTheme = (): void => {
 };
 
 // Accessibility utilities
-export const enhanceAccessibility = (): void => {
+export const enhanceAccessibility = () => {
   // Add skip to content link
   const skipLink = document.createElement('a');
   skipLink.href = '#main-content';

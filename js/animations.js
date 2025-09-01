@@ -1,5 +1,5 @@
 // Animation utilities for GuideGuita
-export const fadeInUp = (element: HTMLElement, delay: number = 0) => {
+export const fadeInUp = (element, delay= 0) => {
   element.style.opacity = '0';
   element.style.transform = 'translateY(40px)';
   element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
@@ -10,7 +10,7 @@ export const fadeInUp = (element: HTMLElement, delay: number = 0) => {
   }, delay);
 };
 
-export const slideInFromLeft = (element: HTMLElement, delay: number = 0) => {
+export const slideInFromLeft = (element, delay= 0) => {
   element.style.opacity = '0';
   element.style.transform = 'translateX(-100px)';
   element.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
@@ -21,7 +21,7 @@ export const slideInFromLeft = (element: HTMLElement, delay: number = 0) => {
   }, delay);
 };
 
-export const scaleIn = (element: HTMLElement, delay: number = 0) => {
+export const scaleIn = (element, delay= 0) => {
   element.style.opacity = '0';
   element.style.transform = 'scale(0.8)';
   element.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';

@@ -1,48 +1,43 @@
 // Carousel utility functions
-export interface CarouselItem {
-  name: string;
-  image: string;
-  description?: string;
-}
 
 export class CarouselController {
-  private currentIndex: number = 0;
-  private items: CarouselItem[];
-  private autoPlayInterval: NodeJS.Timeout | null = null;
-  private isPlaying: boolean = true;
+  currentIndex = 0;
+  items = [];
+  autoPlayInterval = null;
+  isPlaying = true;
 
-  constructor(items: CarouselItem[]) {
+  constructor(items) {
     this.items = items;
   }
 
-  getCurrentIndex(): number {
+  getCurrentIndex() {
     return this.currentIndex;
   }
 
-  getItems(): CarouselItem[] {
+  getItems() {
     return this.items;
   }
 
-  next(): number {
+  next() {
     this.currentIndex = (this.currentIndex + 1) % this.items.length;
     return this.currentIndex;
   }
 
-  previous(): number {
-    this.currentIndex = this.currentIndex === 0 
-      ? this.items.length - 1 
+  previous() {
+    this.currentIndex = this.currentIndex === 0
+      ? this.items.length - 1
       : this.currentIndex - 1;
     return this.currentIndex;
   }
 
-  goTo(index: number): number {
+  goTo(index) {
     if (index >= 0 && index < this.items.length) {
       this.currentIndex = index;
     }
     return this.currentIndex;
   }
 
-  startAutoPlay(interval: number = 4000): void {
+  startAutoPlay(interval = 4000) {
     this.stopAutoPlay();
     this.isPlaying = true;
     this.autoPlayInterval = setInterval(() => {
@@ -50,7 +45,7 @@ export class CarouselController {
     }, interval);
   }
 
-  stopAutoPlay(): void {
+  stopAutoPlay() {
     if (this.autoPlayInterval) {
       clearInterval(this.autoPlayInterval);
       this.autoPlayInterval = null;
@@ -58,7 +53,7 @@ export class CarouselController {
     this.isPlaying = false;
   }
 
-  toggleAutoPlay(interval: number = 4000): boolean {
+  toggleAutoPlay(interval = 4000) {
     if (this.isPlaying) {
       this.stopAutoPlay();
     } else {
@@ -67,7 +62,7 @@ export class CarouselController {
     return this.isPlaying;
   }
 
-  isAutoPlaying(): boolean {
+  isAutoPlaying() {
     return this.isPlaying;
   }
 }

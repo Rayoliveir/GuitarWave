@@ -16,7 +16,7 @@ export interface CareItem {
   difficulty: 'Fácil' | 'Médio' | 'Difícil';
 }
 
-export const guitarTypes: GuitarType[] = [
+export const guitarTypes= [
   {
     name: "Acústica",
     image: "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg",
@@ -61,7 +61,7 @@ export const guitarTypes: GuitarType[] = [
   }
 ];
 
-export const careItems: CareItem[] = [
+export const careItems= [
   {
     title: "Limpeza Regular",
     description: "Mantenha sua guitarra limpa para preservar o som e a aparência.",
@@ -71,7 +71,7 @@ export const careItems: CareItem[] = [
   },
   {
     title: "Troca de Cordas",
-    description: "Troque as cordas regularmente para manter a qualidade sonora do instrumento.",
+    description: "Troque",
     videoUrl: "https://www.youtube.com/watch?v=bGF1UP936TI",
     frequency: "Mensal",
     difficulty: "Médio"
@@ -156,7 +156,7 @@ export const timelineEvents = [
   {
     year: "1980s",
     title: "Revolução Digital",
-    description: "Surgem as primeiras guitarras com tecnologia digital e sintetizadores integrados.",
+    description: "Surgem",
     category: "modern"
   },
   {
@@ -187,13 +187,13 @@ export const galleryItems = [
 ];
 
 // Utility function to format guitar names
-export const formatGuitarName = (name: string): string => {
+export const formatGuitarName = (name) => {
   return name.replace(/([A-Z])/g, ' $1').trim();
 };
 
 // Function to get guitar recommendation based on user level
-export const getGuitarRecommendation = (level: string): GuitarType | null => {
-  const levelMap: { [key: string]: 'Iniciante' | 'Intermediário' | 'Avançado' } = {
+export const getGuitarRecommendation = (level) => {
+  const levelMap= {
     'beginner': 'Iniciante',
     'intermediate': 'Intermediário',
     'advanced': 'Avançado'

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-export const useScrollAnimation = (threshold: number = 0.1) => {
+export const useScrollAnimation = (threshold= 0.1) => {
   const elementRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export const useScrollAnimation = (threshold: number = 0.1) => {
   return elementRef;
 };
 
-export const useParallax = (speed: number = 0.5) => {
+export const useParallax = (speed= 0.5) => {
   const elementRef = useRef<HTMLElement>(null);
 
   useEffect(() => {

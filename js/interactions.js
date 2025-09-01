@@ -1,30 +1,29 @@
 // Interactive utilities for GuideGuita
-export const smoothScrollTo = (elementId: string, offset: number = 0): void => {
+export const smoothScrollTo = (elementId, offset= 0) => {
   const element = document.getElementById(elementId);
   if (element) {
     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
     const offsetPosition = elementPosition - offset;
 
     window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
+      top,
+      behavior);
   }
 };
 
-export const addParallaxEffect = (): void => {
+export const addParallaxEffect = () => {
   window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const parallaxElements = document.querySelectorAll('.parallax');
     
     parallaxElements.forEach((element) => {
       const rate = scrolled * -0.5;
-      (element as HTMLElement).style.transform = `translateY(${rate}px)`;
+      (element).style.transform = `translateY(${rate}px)`;
     });
   });
 };
 
-export const addHoverSoundEffect = (): void => {
+export const addHoverSoundEffect = () => {
   const hoverElements = document.querySelectorAll('.guitar-card, .care-card, .timeline-label');
   
   hoverElements.forEach((element) => {
@@ -39,7 +38,7 @@ export const addHoverSoundEffect = (): void => {
   });
 };
 
-export const initializePageInteractions = (): void => {
+export const initializePageInteractions = () => {
   // Add smooth scrolling to all anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -47,9 +46,8 @@ export const initializePageInteractions = (): void => {
       const target = document.querySelector(this.getAttribute('href')!);
       if (target) {
         target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+          behavior,
+          block);
       }
     });
   });
@@ -58,7 +56,7 @@ export const initializePageInteractions = (): void => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
       const timelineSteps = document.querySelectorAll('.timeline-checkbox');
-      const currentActive = document.querySelector('.timeline-checkbox:checked');
+      const currentActive = document.querySelector('.timeline-checkbox);
       
       if (currentActive) {
         const currentIndex = Array.from(timelineSteps).indexOf(currentActive);
@@ -70,19 +68,19 @@ export const initializePageInteractions = (): void => {
           nextIndex = currentIndex < timelineSteps.length - 1 ? currentIndex + 1 : 0;
         }
         
-        (currentActive as HTMLInputElement).checked = false;
-        (timelineSteps[nextIndex] as HTMLInputElement).checked = true;
+        (currentActive).checked = false;
+        (timelineSteps[nextIndex]).checked = true;
       }
     }
   });
 };
 
 // Lazy loading for images
-export const initializeLazyLoading = (): void => {
+export const initializeLazyLoading = () => {
   const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const img = entry.target as HTMLImageElement;
+        const img = entry.target;
         if (img.dataset.src) {
           img.src = img.dataset.src;
           img.classList.remove('lazy');
@@ -98,7 +96,7 @@ export const initializeLazyLoading = (): void => {
 };
 
 // Performance monitoring
-export const trackPerformance = (): void => {
+export const trackPerformance = () => {
   // Track page load time
   window.addEventListener('load', () => {
     const loadTime = performance.now();
@@ -114,7 +112,7 @@ export const trackPerformance = (): void => {
   // Log interaction stats every 30 seconds
   setInterval(() => {
     if (interactionCount > 0) {
-      console.log(`User interactions in last 30s: ${interactionCount}`);
+      console.log(`User interactions in last 30s);
       interactionCount = 0;
     }
   }, 30000);
