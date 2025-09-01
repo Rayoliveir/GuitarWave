@@ -1,4 +1,8 @@
-/* Color Variables */
+@font-face {
+  font-family: 'titulo';
+  src: url(../fonts/ROCKETZ.ttf);
+}
+
 :root {
   --dark-slate-gray: #335c67;
   --vanilla: #fff3b0;
@@ -6,7 +10,6 @@
   --auburn: #9e2a2b;
   --chocolate-cosmos: #540b0e;
   
-  /* Extended palette for better gradients */
   --dark-slate-gray-light: #4a7c8a;
   --dark-slate-gray-dark: #2a4d56;
   --vanilla-light: #fffcdc;
@@ -19,7 +22,6 @@
   --chocolate-cosmos-dark: #3d0509;
 }
 
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -106,9 +108,12 @@ body {
 }
 
 .hero-icon {
+  font-family: titulo;
+  font-size: 10rem;
   margin-bottom: 2rem;
   opacity: 0;
   animation: fadeInUp 1s ease-out 0.5s forwards;
+
 }
 
 .hero-title {
