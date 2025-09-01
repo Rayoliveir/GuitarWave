@@ -1,14 +1,16 @@
-// Timeline utility functions
-export interface TimelineEvent {
-  year: string;
-  title: string;
-  description: string;
-  category?: string;
-}
+
+
+/**
+ * @typedef {Object} TimelineEvent
+ * @property {string} year
+ * @property {string} title
+ * @property {string} description
+ * @property {string} [category]
+ */
 
 export class TimelineController {
-  events: TimelineEvent[];
-  activeIndex: number | null = null;
+  events;
+  activeIndex = null;
 
   constructor(events) {
     this.events = events;
@@ -30,12 +32,10 @@ export class TimelineController {
     return this.activeIndex !== null ? this.events[this.activeIndex] : null;
   }
 
-  // Filter events by category
   filterByCategory(category){
     return this.events.filter(event => event.category === category);
   }
 
-  // Get events in a specific year range
   getEventsInRange(startYear, endYear){
     return this.events.filter(event => {
       const year = parseInt(event.year.replace(/\D/g, ''));
@@ -44,13 +44,13 @@ export class TimelineController {
   }
 }
 
-// Smooth scroll to timeline element
 export const scrollToTimelineEvent = (index) => {
   const element = document.querySelector(`#timeline-step-${index}`);
   if (element) {
     element.scrollIntoView({
-      behavior,
-      block,
-      inline);
+      behavior: "smooth",
+      block: "center",
+      inline: "nearest"
+    });
   }
 };

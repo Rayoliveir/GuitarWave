@@ -1,5 +1,3 @@
-// Carousel utility functions
-
 export class CarouselController {
   currentIndex = 0;
   items = [];

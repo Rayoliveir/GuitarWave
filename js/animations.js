@@ -1,4 +1,3 @@
-// Animation utilities for GuideGuita
 export const fadeInUp = (element, delay= 0) => {
   element.style.opacity = '0';
   element.style.transform = 'translateY(40px)';
@@ -32,7 +31,6 @@ export const scaleIn = (element, delay= 0) => {
   }, delay);
 };
 
-// Intersection Observer for scroll animations
 export const observeElements = () => {
   const observer = new IntersectionObserver(
     (entries) => {
@@ -48,7 +46,6 @@ export const observeElements = () => {
     }
   );
 
-  // Observe all sections
   document.querySelectorAll('section').forEach((section) => {
     observer.observe(section);
   });

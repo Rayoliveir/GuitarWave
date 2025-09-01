@@ -1,4 +1,3 @@
-// Guitar data and utility functions
 /**
  * @typedef {Object} GuitarType
  * @property {string} name
@@ -188,12 +187,10 @@ export const galleryItems = [
   }
 ];
 
-// Utility function to format guitar names
 export const formatGuitarName = (name) => {
   return name.replace(/([A-Z])/g, ' $1').trim();
 };
 
-// Function to get guitar recommendation based on user level
 export const getGuitarRecommendation = (level) => {
   const levelMap= {
     'beginner': 'Iniciante',

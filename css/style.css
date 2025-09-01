@@ -46,7 +46,6 @@ body {
   padding: 0 2rem;
 }
 
-/* Typography */
 .section-title {
   font-size: 3rem;
   font-weight: 700;
@@ -70,7 +69,6 @@ body {
   margin-right: auto;
 }
 
-/* Hero Section */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -212,7 +210,6 @@ body {
   50% { transform: translateY(-20px); }
 }
 
-/* Timeline Section */
 .timeline-section {
   padding: 8rem 0;
   background: linear-gradient(135deg, var(--dark-slate-gray) 0%, var(--dark-slate-gray-dark) 100%);
@@ -376,7 +373,6 @@ body {
   line-height: 1.5;
 }
 
-/* Guitar Types Section */
 .guitar-types-section {
   padding: 8rem 0;
   background: linear-gradient(135deg, var(--auburn) 0%, var(--chocolate-cosmos) 100%);
@@ -638,7 +634,6 @@ body {
   color: var(--hunyadi-yellow);
 }
 
-/* Extra Tips */
 .extra-tips {
   background: linear-gradient(135deg, var(--vanilla) 0%, var(--vanilla-light) 100%);
   border-radius: 24px;
@@ -700,7 +695,6 @@ body {
   line-height: 1.5;
 }
 
-/* Gallery Section */
 .gallery-section {
   padding: 8rem 0;
   background: linear-gradient(135deg, var(--auburn) 0%, var(--chocolate-cosmos) 100%);
@@ -787,7 +781,6 @@ body {
   transform: scale(1.2);
 }
 
-/* Footer */
 .footer {
   background: linear-gradient(135deg, var(--dark-slate-gray) 0%, var(--chocolate-cosmos) 100%);
   padding: 4rem 0 2rem;
@@ -845,7 +838,6 @@ body {
   opacity: 0.9;
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -861,7 +853,6 @@ body {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -880,7 +871,6 @@ body {
   background: linear-gradient(135deg, var(--hunyadi-yellow-light) 0%, var(--auburn-light) 100%);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .section-title {
     font-size: 2.5rem;
@@ -979,13 +969,11 @@ body {
   }
 }
 
-/* Loading and Performance */
 .smooth-load {
   opacity: 0;
   animation: fadeInUp 1s ease-out forwards;
 }
 
-/* Focus accessibility */
 .timeline-label:focus,
 .care-card:focus,
 .guitar-card-container:focus,
@@ -995,7 +983,6 @@ body {
   outline-offset: 3px;
 }
 
-/* Print styles */
 @media print {
   .video-link-popup,
   .footer,

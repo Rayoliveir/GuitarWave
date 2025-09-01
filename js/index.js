@@ -1,13 +1,10 @@
-// Main utilities export file
 export * from './animations';
 export * from './carousel';
 export * from './timeline';
 export * from './guitarData';
 export * from './interactions';
 
-// Main initialization function
 export const initializeGuideGuita = () => {
-  // Initialize all interactive features
   import('./interactions').then(({ 
     initializePageInteractions, 
     initializeLazyLoading, 
@@ -22,7 +19,6 @@ export const initializeGuideGuita = () => {
     addHoverSoundEffect();
   });
 
-  // Initialize scroll animations
   import('./animations').then(({ observeElements }) => {
     observeElements();
   });
@@ -30,7 +26,6 @@ export const initializeGuideGuita = () => {
   console.log('🎸 GuideGuita initialized successfully!');
 };
 
-// Theme utilities
 export const toggleTheme = () => {
   document.body.classList.toggle('dark-theme');
   localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
@@ -43,16 +38,13 @@ export const loadSavedTheme = () => {
   }
 };
 
-// Accessibility utilities
 export const enhanceAccessibility = () => {
-  // Add skip to content link
   const skipLink = document.createElement('a');
   skipLink.href = '#main-content';
   skipLink.textContent = 'Pular para o conteúdo principal';
   skipLink.className = 'skip-link';
   document.body.insertBefore(skipLink, document.body.firstChild);
 
-  // Add ARIA labels to interactive elements
   document.querySelectorAll('.timeline-label').forEach((label, index) => {
     label.setAttribute('aria-label', `Evento da timeline ${index + 1}`);
   });
