@@ -14,3 +14,5 @@ Bem-vindo ao **GuitarWave**, uma landing page moderna e responsiva dedicada aos 
 
 Este projeto foi criado com o intuito de praticar habilidades em desenvolvimento web e design, ao mesmo tempo em que homenageia o universo das guitarras. Ideal para músicos, marcas e criadores de conteúdo musical.
 
+## 🔗 Link do projeto
+https://guitar-wave.vercel.app/
